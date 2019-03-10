@@ -1,0 +1,6 @@
+    node ('slave1')  {
+        stage ('chgeckout') {
+                checkout scm
+        }
+        stage ('build') {
+            gradleHome = tool "gradle"
