@@ -4,6 +4,6 @@
                             }
         
         stage ('build') {
-            gradleHome = tool "gradle"
+            gradleHome = tool "gradle4"
             }
         }
