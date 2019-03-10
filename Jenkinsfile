@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage ('checkout'){
             steps {
-                sh https://github.com/MarkY972/gradle-hello-world.git
+                sh git clone https://github.com/MarkY972/gradle-hello-world.git
             }
         }
-        stage('biuld') {
-            steps {
-                sh "whoami"
+        stage('build') {
+            steps { 
+                sh "gradle build"
             }
         }
     }
